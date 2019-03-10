@@ -18,6 +18,7 @@ public class Test {
         //Adding Chrome Driver
     	System.setProperty("webdriver.chrome.driver","C:\\HarmanArora\\chromedriver.exe");
         driver = new ChromeDriver();
+        //Adding TimeOut
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("http://automationpractice.com/index.php");
     }
