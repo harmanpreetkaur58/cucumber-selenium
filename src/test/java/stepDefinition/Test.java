@@ -15,6 +15,7 @@ public class Test {
 	public static WebDriver driver;
     @Given("^user is  on homepage$")
     public void user_is_on_homepage() throws Throwable {
+        //Adding Chrome Driver
     	System.setProperty("webdriver.chrome.driver","C:\\HarmanArora\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
